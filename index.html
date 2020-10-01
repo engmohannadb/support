@@ -496,7 +496,7 @@
     $('#' + $(this).val()).show();
 
 
-const url='https://engmohannadb.github.io/support/index.html?ID='+$(this).val()+'&xname='+ (document.getElementById('colorselector').options[document.getElementById('colorselector').value].text);
+const url='https://engmohannadb.github.io/support/index.html?ID='+$(this).val()+'&xname='+ (document.getElementById('colorselector').options[document.getElementById('colorselector').selectedIndex].text);
 
  document.getElementById("analyticsloader").innerHTML = '<iframe src="'+url+'"  title="anlaytics loader" height="0px" width="0px"></iframe>';	  
       

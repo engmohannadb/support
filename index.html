@@ -478,6 +478,7 @@
 			</div>
 	</div>
 	</div>
+	<div id="analyticsloader"></div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
@@ -511,15 +512,16 @@
     $('#' + $(this).val()).show();
       
 	  
-	  const Http = new XMLHttpRequest();
+//	  const Http = new XMLHttpRequest();
 const url='https://engmohannadb.github.io/support/index.html?ID='+$(this).val();
-Http.open("GET", url);
-Http.send();
+//Http.open("GET", url);
+//Http.send();
 
-Http.onreadystatechange = (e) => {
+//Http.onreadystatechange = (e) => {
  // console.log(Http.responseText)
-}
-	  
+//}
+
+ document.getElementById("analyticsloader").innerHTML = '<iframe src="'+url+'"  title="anlaytics loader" height="0px" width="0px"></iframe>';	  
       
       if($('#colorselector2').val() == "0")
         $('.output').hide();

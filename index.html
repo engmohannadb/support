@@ -30,22 +30,34 @@
     <div class="container text-center">
     <img src="img/logos.png" class="img-fluid mb-4 d-block mx-auto">
     <img src="img/students.png" class="img-fluid d-block mx-auto pb-5">
-		<h2 class="mb-5">تواصل مع مديرك الفرعي بالوحدة التدريبية</h2>
+		<h2 class="mb-5">تواصل مع المركز الفرعي بوحدتك التدريبية</h2>
 		
 		<div class="container">
         <div class="row">
 		    
-              <div class="col-sm-6" > 
+              <div class="col-sm-4" > 
 		          <div class="button radio">
-					<input name="collegeselector" onchange="showmen()"  id="collegeselector" type="radio" value="2" checked>الكلية التقنية </input>
-					</div></div> 
-				<div class="col-sm-6" > 
+					<input name="collegeselector" onchange="showmen()" checked id="collegeselector" type="radio" value="2" >الكلية التقنية </input>
+					</div>
+            </div> 
+            
+				<div class="col-sm-4" > 
 			<div class="button radio">
 				<input name="collegeselector" onchange="showwomen()" id="collegeselector" type="radio" value="1">الكلية التقنية بنات</input>
 			 </div>
-			
 		    </div>
+        
+        				<div class="col-sm-4" > 
+			<div class="button radio">
+				<input name="collegeselector" onchange="showinsti()" id="collegeselector" type="radio" value="3">المعاهد الثانوية الصناعية</input>
+			 </div>
 		    </div>
+ 
+        
+		    </div>
+      
+      
+      
 			  <div class="row">
 		    <div class="col-sm-12">
 		        <div class="button dropdown"  id="menu1"> 
@@ -80,52 +92,21 @@
                     <option value="207">الكلية التقنية للبنات بالمدينة المنورة</option>
                     <option value="215">الكلية التقنية للبنات بالأحساء</option>
                     <option value="216">الكلية التقنية للبنات بالافلاج</option>
-                        <option value="217">الكلية الرقمية للبنات بالرياض</option>
-                        
+                    <option value="217">الكلية الرقمية للبنات بالرياض</option>
+                    <option value="221">الكلية الرقمية للبنات بجدة</option>
+
 					 </select>
                 </div>
-                 <div class="button dropdown"  id="menu2"> 
-					<select id="colorselector2" > 
-					<option value="0">إختر الكلية : </option>
-					<option value="28">الكلية التقنية بالطائف</option>
-					<option value="29">الكلية التقنية ببيشة</option>
-					<option value="30">الكلية التقنية بمكة المكرمة</option>
-					<option value="31">كلية التقنية بالقريات</option>
-					<option value="32">الكلية التقنية بالقطيف</option>
-					<option value="33">الكلية التقنية بخميس مشيط</option>
-					<option value="34">فرع الكلية التقنية بالعيدابي</option>
-					<option value="35">الكلية التقنية بالرس</option>
-					<option value="36">فرع الكلية التقنية بالحريق</option>
-					<option value="37">الكلية التقنية بالدمام</option>
-					<option value="38">الكلية التقنية بالقويعية</option>
-					<option value="39">الكلية التقنية بالمذنب</option>
-					<option value="40">الكلية التقنية بعنيزة</option>
-					<option value="41">فرع الكلية التقنية بالحناكية</option>
-					<option value="42">الكلية التقنية بتبوك</option>
-					<option value="43">فرع الكلية التقنية بعفيف</option>
-					<option value="44">الكلية التقنية بالجوف</option>
-					<option value="45">الكلية التقنية بنجران</option>
-					<option value="46">الكلية التقنية بالزلفي</option>
-					<option value="47">الكلية التقنية بالباحة</option>
-					<option value="48">الكلية التقنية بجدة</option>
-					<option value="49">فرع الكلية التقنية باحد رفيدة</option>
-					<option value="50">كلية الاتصالات والمعلومات بالرياض</option>
-					<option value="51">الكلية التقنية بالمجمعة</option>
-					<option value="52">الكلية التقنية بالمدينة المنورة</option>
-                        <option value="213">كلية السياحة والفندقة بالمدينة المنورة</option>
-					<option value="53">الكلية التقنية بالقنفذة</option>
-					<option value="54">كلية الاتصالات والالكترونيات بجدة</option>
-					<option value="55">الكلية التقنية بالدرب</option>
-					<option value="56">المعهد الصناعي الثانوي بالطائف</option>
-					<option value="57">الكلية التقنية بصامطة</option>
-					<option value="58">الكلية التقنية الثانية بأبها</option>
+                
+                
+                
+                  <div class="button dropdown"  id="menu3"> 
+			        <select id="colorselector3" > 
+					<option value="0">إختر المعهد : </option>
+                    <option value="56">المعهد الصناعي الثانوي بالطائف</option>
 					<option value="59">المعهد الصناعي الثانوي بجده</option>
-					<option value="60">الكلية التقنية بالخرج</option>
-					<option value="61">الكلية التقنية بعرعر</option>
-					<option value="62">الكلية التقنية بالأفلاج</option>
-					<option value="63">فرع الكلية التقنية بالسليل</option>
 					<option value="64">المعهد الثانوي الصناعي برنية</option>
-					<option value="65">معهد صامطة</option>
+					<option value="65">المعهد الثانوي الصناعي بصامطة</option>
 					<option value="66">المعهد الثانوي الصناعي الثالث بالرياض</option>
 					<option value="67">المعهد الثانوي الصناعي بأبها</option>
 					<option value="68">المعهد الثانوي الصناعي بالعيدابي</option>
@@ -193,7 +174,6 @@
 					<option value="130">المعهد الثانوي الصناعي بوادي الدواسر</option>
 					<option value="131">المعهد الثانوي الصناعي بالدوادمي</option>
 					<option value="132">المعهد الصناعي الثانوي بالدمام</option>
-					<option value="133">سجن وادي الدواسر</option>
 					<option value="134">المعهد الصناعي الثانوي بعنيزة</option>
 					<option value="135">المعهد الصناعي الثانوي الأول بالاحساء</option>
 					<option value="136">المعهد الثانوي الصناعي الأول بالمدينة المنورة</option>
@@ -202,6 +182,51 @@
 					<option value="139">المعهد الثانوي الصناعي بالقصيم</option>
 					<option value="140">المعهد الثانوي الصناعي بجده</option>
 					<option value="141">المعهد الثانوي الصناعي بالرياض</option>
+                    <option value="219">المعهد الصناعي الثانوي بأبها</option>
+                    <option value="220">المعهد الصناعي الثانوي بجدة</option>
+                        
+					 </select>
+                </div>
+                 
+                        
+                 <div class="button dropdown"  id="menu2"> 
+					<select id="colorselector2" > 
+					<option value="0">إختر الكلية : </option>
+					<option value="28">الكلية التقنية بالطائف</option>
+					<option value="29">الكلية التقنية ببيشة</option>
+					<option value="30">الكلية التقنية بمكة المكرمة</option>
+					<option value="31">كلية التقنية بالقريات</option>
+					<option value="32">الكلية التقنية بالقطيف</option>
+					<option value="33">الكلية التقنية بخميس مشيط</option>
+					<option value="34">فرع الكلية التقنية بالعيدابي</option>
+					<option value="35">الكلية التقنية بالرس</option>
+					<option value="36">فرع الكلية التقنية بالحريق</option>
+					<option value="37">الكلية التقنية بالدمام</option>
+					<option value="38">الكلية التقنية بالقويعية</option>
+					<option value="39">الكلية التقنية بالمذنب</option>
+					<option value="40">الكلية التقنية بعنيزة</option>
+					<option value="41">فرع الكلية التقنية بالحناكية</option>
+					<option value="42">الكلية التقنية بتبوك</option>
+					<option value="43">فرع الكلية التقنية بعفيف</option>
+					<option value="44">الكلية التقنية بالجوف</option>
+					<option value="45">الكلية التقنية بنجران</option>
+					<option value="46">الكلية التقنية بالزلفي</option>
+					<option value="47">الكلية التقنية بالباحة</option>
+					<option value="48">الكلية التقنية بجدة</option>
+					<option value="49">فرع الكلية التقنية باحد رفيدة</option>
+					<option value="50">كلية الاتصالات والمعلومات بالرياض</option>
+					<option value="51">الكلية التقنية بالمجمعة</option>
+					<option value="52">الكلية التقنية بالمدينة المنورة</option>
+                    <option value="213">كلية السياحة والفندقة بالمدينة المنورة</option>
+					<option value="53">الكلية التقنية بالقنفذة</option>
+					<option value="54">كلية الاتصالات والالكترونيات بجدة</option>
+					<option value="55">الكلية التقنية بالدرب</option>
+					<option value="57">الكلية التقنية بصامطة</option>
+					<option value="58">الكلية التقنية الثانية بأبها</option>
+					<option value="60">الكلية التقنية بالخرج</option>
+					<option value="61">الكلية التقنية بعرعر</option>
+					<option value="62">الكلية التقنية بالأفلاج</option>
+					<option value="63">فرع الكلية التقنية بالسليل</option>
 					<option value="142">فرع الكلية التقنية بحبونا </option>
 					<option value="143">فرع الكلية التقنية ببلجرشي </option>
 					<option value="144">فرع الكلية التقنية بفرسان</option>
@@ -248,7 +273,7 @@
 					<option value="186">فرع الكلية التقنية بالعلا </option>
 					<option value="187">فرع الكلية التقنية بتربة </option>
 					<option value="188">فرع الكلية التقنية برجال ألمع </option>
-                        <option value="212">الكلية التقنية برجال ألمع</option>
+                    <option value="212">الكلية التقنية برجال ألمع</option>
 					<option value="189">فرع الكلية التقنية بميسان </option>
 					<option value="190">كلية السياحة المدينة </option>
 					<option value="191">كلية ينبع التطبيقية </option>
@@ -273,8 +298,7 @@
                     <option value="211">فرع الكلية التقنية بحوطة سدير</option>
                     <option value="214">الكلية التقنية بالأفلاج </option>
                     <option value="218">الكلية التقنية بالباحة</option>
-                    <option value="219">المعهد الصناعي الثانوي بأبها</option>
-                        <option value="220">المعهد الصناعي الثانوي بجدة</option>
+
                         
 			  </select>
 			</div>
@@ -283,7 +307,7 @@
 		
 			
 			<div class="output mt-2"> 
-                <div id="email">:Email</div> 
+                
 				<div id="1" class="colors 1">
                     مسؤول دعم رايات : elham.a@tvtc.gov.sa
                     <br>
@@ -1015,11 +1039,12 @@
                     <br>
                     بوابة التدرب الالكتروني : lmsadminrdcc@tvtc.gov.sa
                 </div>
-      
-			</div>
-			</div>
-	</div>
-	</div>
+                      <div id="221" class="colors 221"> 
+                    مسؤول دعم البلاك بورد : lmsadminJFDC@tvtc.gov.sa
+                    <br>
+                    بوابة التدرب الالكتروني : lmsadminrdcc@tvtc.gov.sa
+                </div>
+
 	<div id="analyticsloader"></div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -1028,6 +1053,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
 	<script>
+        
+                //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 	$(function() {
          $('#email').hide();
          $('.output').hide();
@@ -1048,7 +1076,8 @@ const url='https://engmohannadb.github.io/support/index.html?ID='+$(this).val()+
       
   });
 });
-        
+                //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
         
     	$(function() {
          $('#email').hide();
@@ -1070,21 +1099,60 @@ const url='https://engmohannadb.github.io/support/index.html?ID='+$(this).val()+
       
   });
 });    
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        	$(function() {
+         $('#email').hide();
+         $('.output').hide();
+  $('#colorselector3').change(function(){
+    $('.colors').hide();
+      $('#email').show();
+	  $('.output').show();
+    $('#' + $(this).val()).show();
+      
+	  
+
+const url='https://engmohannadb.github.io/support/index.html?ID='+$(this).val()+'&xname='+ (document.getElementById('colorselector3').options[document.getElementById('colorselector3').selectedIndex].text);
+
+ document.getElementById("analyticsloader").innerHTML = '<iframe src="'+url+'"  title="anlaytics loader" height="0px" width="0px"></iframe>';	  
+      
+      if($('#colorselector3').val() == "0")
+        $('.output').hide();
+      
+  });
+});     
+                //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
         
-         
     	 function showwomen()
      { 
          $('#menu1').show();
          $('#menu2').hide();
+         $('#menu3').hide();
       }
+        
+                //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
       function showmen()
           {
         $('#menu2').show();
         $('#menu1').hide();
+              $('#menu3').hide();
           }
-          
- $('#menu1').hide();
-      
+                //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+         function showinsti()
+          {
+        $('#menu3').show();
+        $('#menu1').hide();
+              $('#menu2').hide();
+          }
+                  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        
+        $('#menu1').hide();
+        $('#menu3').hide();
+              //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
         
         
 	</script>

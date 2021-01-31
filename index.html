@@ -1,6 +1,8 @@
 <!doctype html>
 <html lang="en">
   <head>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -11,58 +13,49 @@
 		<link href="./style.css" rel="stylesheet">
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179247738-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-179247738-1');
-</script>
+
 
 
     <title>الدعم الفني للمتدربين</title>
   </head>
   <body dir="rtl">
-  
-
-  
   <div class="bg">
     <div class="container text-center">
     <img src="img/logos.png" class="img-fluid mb-4 d-block mx-auto">
-    <img src="img/students.png" class="img-fluid d-block mx-auto pb-5">
+   <!-- <img src="img/students.png" class="img-fluid d-block mx-auto pb-5"> -->
 		<h2 class="mb-5">تواصل مع المركز الفرعي بوحدتك التدريبية</h2>
-		
+        <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>      
+        
+                    
+        <script>
+        
+        // In your Javascript (external .js resource or <script> tag)
+$(document).ready(function() {
+    $('.js-example-basic-single').select2();
+});
+        
+        </script>
+
+                   
+   
+        
+        
+        
+        
 		<div class="container">
-        <div class="row">
-		    
-              <div class="col-sm-4" > 
-		          <div class="button radio">
-					<input name="collegeselector" onchange="showmen()" checked id="collegeselector" type="radio" value="2" >الكلية التقنية </input>
-					</div>
-            </div> 
-            
-				<div class="col-sm-4" > 
-			<div class="button radio">
-				<input name="collegeselector" onchange="showwomen()" id="collegeselector" type="radio" value="1">الكلية التقنية بنات</input>
-			 </div>
-		    </div>
-        
-        				<div class="col-sm-4" > 
-			<div class="button radio">
-				<input name="collegeselector" onchange="showinsti()" id="collegeselector" type="radio" value="3">المعاهد الثانوية الصناعية</input>
-			 </div>
-		    </div>
- 
-        
-		    </div>
+       
+				<p class="button radio">أختر الكلية أو المعهد:</p>
+		   
       
       
       
 			  <div class="row">
 		    <div class="col-sm-12">
-		        <div class="button dropdown"  id="menu1"> 
-			        <select id="colorselector" > 
-					<option value="0">إختر الكلية : </option>
+		        <div class="button radio "  id="menu1"> 
+			        <select id="colorselector" class="js-example-basic-single" name="state"> 
+					<option value="0">    </option>
 					<option value="1">الكلية التقنية للبنات بالطائف</option>
 					<option value="2">الكلية التقنية للبنات بجدة</option>
 					<option value="3">الكلية التقنية للبنات بالرياض</option>
@@ -95,25 +88,19 @@
                     <option value="217">الكلية الرقمية للبنات بالرياض</option>
                     <option value="221">الكلية الرقمية للبنات بجدة</option>
 
-					 </select>
-                </div>
-                
-                
-                
-                  <div class="button dropdown"  id="menu3"> 
-			        <select id="colorselector3" > 
-					<option value="0">إختر المعهد : </option>
-                    <option value="56">المعهد الصناعي الثانوي بالطائف</option>
-					<option value="59">المعهد الصناعي الثانوي بجده</option>
+                        
+                        
+                        <option value="56">المعهد الثانوي الصناعي بالطائف</option>
+					<option value="59">المعهد الثانوي الصناعي بجدة</option>
 					<option value="64">المعهد الثانوي الصناعي برنية</option>
 					<option value="65">المعهد الثانوي الصناعي بصامطة</option>
 					<option value="66">المعهد الثانوي الصناعي الثالث بالرياض</option>
 					<option value="67">المعهد الثانوي الصناعي بأبها</option>
 					<option value="68">المعهد الثانوي الصناعي بالعيدابي</option>
-					<option value="69">المعهد الصناعي الثانوي بطبرجل</option>
+					<option value="69">المعهد الثانوي الصناعي بطبرجل</option>
 					<option value="70">المعهد الملكي بالرياض</option>
 					<option value="71">المعهد الثانوي الصناعي بتثليث</option>
-					<option value="72">المعهد الصناعي الثانوي بالحريضة</option>
+					<option value="72">المعهد الثانوي الصناعي بالحريضة</option>
 					<option value="73">المعهد الثانوي الصناعي بشرورة</option>
 					<option value="74">المعهد الثانوي الصناعي برفحاء</option>
 					<option value="75">معهدالعمارة برياض الخبراء</option>
@@ -126,21 +113,21 @@
 					<option value="82">المعهد الثانوي الصناعي ببقعاء</option>
 					<option value="83">المعهد الثانوي الصناعي ببدر</option>
 					<option value="84">المعهد الثانوي الصناعي بحوطة سدير</option>
-					<option value="85">المعهد الصناعي الثانوي بالقنفذة </option>
+					<option value="85">المعهد الثانوي الصناعي بالقنفذة </option>
 					<option value="86">المعهد الثانوي الصناعي بالقريات</option>
 					<option value="87">المعهد الثانوي الصناعي ببلقرن</option>
 					<option value="88">المعهد الثانوي الصناعي بحوطة بني تميم</option>
 					<option value="89">المعهد الثانوي الصناعي بالقويعية</option>
 					<option value="90">المعهد الثانوي الصناعي بالمخواة</option>
-					<option value="91">المعهد الصناعي الثانوي بخميس مشيط</option>
+					<option value="91">المعهد الثانوي الصناعي بخميس مشيط</option>
 					<option value="92">المعهد الثانوي الصناعي بتربة</option>
 					<option value="93">المعهد الثانوي الصناعي بالباحة</option>
 					<option value="94">المعهد الثانوي الصناعي الاول بالرياض</option>
-					<option value="95">المعهد الصناعي الثانوي بالزلفي</option>
+					<option value="95">المعهد الثانوي الصناعي بالزلفي</option>
 					<option value="96">المعهد الثانوي الصناعي بتيماء</option>
-					<option value="97">المعهد الصناعي الثانوي بالخرج </option>
+					<option value="97">المعهد الثانوي الصناعي بالخرج </option>
 					<option value="98">المعهد الثانوي الصناعي بسراة عبيدة</option>
-					<option value="99">المعهد الصناعي الثانوي بصبيا</option>
+					<option value="99">المعهد الثانوي الصناعي بصبيا</option>
 					<option value="100">المعهد الثانوي الصناعي بظهران الجنوب</option>
 					<option value="101">المعهد الثانوي الصناعي بالجوف</option>
 					<option value="102">المعهد الثانوي الصناعي بالمذنب</option>
@@ -149,16 +136,16 @@
 					<option value="105">المعهد الصناعي الثانوي بمكة المكرمة</option>
 					<option value="106">المعهد الثانوي الصناعي بعفيف</option>
 					<option value="107">المعهد الثانوي الصناعي بشقراء</option>
-					<option value="108">المعهد الصناعي الثانوي بحفرالباطن</option>
+					<option value="108">المعهد الثانوي الصناعي بحفر الباطن</option>
 					<option value="109">المعهد الثانوي الصناعي بحائل</option>
-					<option value="110">المعهد الصناعي الثانوي الثاني بالمدينة المنورة</option>
+					<option value="110">المعهد الثانوي الصناعي الثاني بالمدينة المنورة</option>
 					<option value="111">المعهد الثانوي الصناعي بجازان</option>
 					<option value="112">المعهد الثانوي الصناعي بتبوك</option>
 					<option value="113">المعهد الثانوي الصناعي ببيشة</option>
 					<option value="114">المعهد الثانوي الصناعي ببريدة</option>
 					<option value="115">المعهد الثانوي الصناعي بالوجه</option>
 					<option value="116">المعهد الثانوي الصناعي بالنماص</option>
-					<option value="117">المعهد الصناعي الثانوي الثالث بالاحساء</option>
+					<option value="117">المعهد الثانوي الصناعي الثالث بالاحساء</option>
 					<option value="118">المعهد الثانوي الصناعي بالمجمعة</option>
 					<option value="119">المعهد الثانوي الصناعي بالليث</option>
 					<option value="120">المعهد الثانوي الصناعي بالقطيف</option>
@@ -166,33 +153,27 @@
 					<option value="122">المعهد الثانوي الصناعي الثاني بالرياض</option>
 					<option value="123">المعهد الثانوي الصناعي بالحناكية</option>
 					<option value="124">المعهد الثانوي الصناعي بالبدائع</option>
-					<option value="125">المعهد الصناعي الثانوي بالأفلاج</option>
+					<option value="125">المعهد الثانوي الصناعي بالأفلاج</option>
 					<option value="126">المعهد الثانوي الصناعي الثاني بجدة</option>
 					<option value="127">المعهد الصناعي الثانوي الثاني بالاحساء</option>
 					<option value="128">المعهد الثانوي الصناعي بأملج</option>
 					<option value="129">المعهد الثانوي الصناعي بعرعر</option>
 					<option value="130">المعهد الثانوي الصناعي بوادي الدواسر</option>
 					<option value="131">المعهد الثانوي الصناعي بالدوادمي</option>
-					<option value="132">المعهد الصناعي الثانوي بالدمام</option>
-					<option value="134">المعهد الصناعي الثانوي بعنيزة</option>
-					<option value="135">المعهد الصناعي الثانوي الأول بالاحساء</option>
+					<option value="132">المعهد الثانوي الصناعي بالدمام</option>
+					<option value="134">المعهد الثانوي الصناعي بعنيزة</option>
+					<option value="135">المعهد الثانوي الصناعي الأول بالاحساء</option>
 					<option value="136">المعهد الثانوي الصناعي الأول بالمدينة المنورة</option>
 					<option value="137">المعهد الثانوي الصناعي بالدرب</option>
 					<option value="138">المعهد الثانوي الصناعي بخميس مشيط</option>
 					<option value="139">المعهد الثانوي الصناعي بالقصيم</option>
 					<option value="140">المعهد الثانوي الصناعي بجده</option>
 					<option value="141">المعهد الثانوي الصناعي بالرياض</option>
-                    <option value="219">المعهد الصناعي الثانوي بأبها</option>
-                    <option value="220">المعهد الصناعي الثانوي بجدة</option>
+                    <option value="219">المعهد الثانوي الصناعي بأبها</option>
+                    <option value="220">المعهد الثانوي الصناعي بجدة</option>
                         
-					 </select>
-                </div>
-                 
                         
-                 <div class="button dropdown"  id="menu2"> 
-					<select id="colorselector2" > 
-					<option value="0">إختر الكلية : </option>
-					<option value="28">الكلية التقنية بالطائف</option>
+                        <option value="28">الكلية التقنية بالطائف</option>
 					<option value="29">الكلية التقنية ببيشة</option>
 					<option value="30">الكلية التقنية بمكة المكرمة</option>
 					<option value="31">كلية التقنية بالقريات</option>
@@ -298,10 +279,10 @@
                     <option value="211">فرع الكلية التقنية بحوطة سدير</option>
                     <option value="214">الكلية التقنية بالأفلاج </option>
                     <option value="218">الكلية التقنية بالباحة</option>
-
                         
-			  </select>
-			</div>
+					 </select>
+                </div>
+    
 		    </div>
 		    </div>
 		
@@ -1051,14 +1032,24 @@
                     مسؤول دعم البلاك بورد : lmsadminJFDC@tvtc.gov.sa
                     <br>
                 </div>
+            </div>
+        </div>
+      </div>
+      </div>
 
 	<div id="analyticsloader"></div>
     <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS 
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>-->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'UA-179247738-1');
+</script>
 	<script>
         
                 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -1127,41 +1118,12 @@ const url='https://engmohannadb.github.io/support/index.html?ID='+$(this).val()+
       
   });
 });     
-                //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-        
-    	 function showwomen()
-     { 
-         $('#menu1').show();
-         $('#menu2').hide();
-         $('#menu3').hide();
-      }
-        
-                //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-      function showmen()
-          {
-        $('#menu2').show();
-        $('#menu1').hide();
-              $('#menu3').hide();
-          }
-                //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-         function showinsti()
-          {
-        $('#menu3').show();
-        $('#menu1').hide();
-              $('#menu2').hide();
-          }
-                  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-        
-        $('#menu1').hide();
-        $('#menu3').hide();
-              //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-        
-        
 	</script>
+                
   </body>
+      
 </html>
+    
+    
+    

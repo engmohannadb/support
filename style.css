@@ -6,7 +6,7 @@ body {
   font-family: 'Cairo';
   color: #111; 
   background-color:#FFF;;
-  margin: 2em 10%
+
 }
 
 /* Label styles: style as needed */
@@ -241,11 +241,15 @@ a:hover {
     padding-bottom: 125px;
     margin: auto;
 }
-
-
-
-
-
+.select2-results {
+    text-align: right;
 }
-  
-  
+@media (min-width: 306px) { 
+    .select2{width: -webkit-fill-available!important}
+    .js-example-basic-single{width: 200px!important}
+    .output {padding:0px}
+}
+
+
+
+
